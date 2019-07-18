@@ -1,0 +1,176 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+.main-container {
+  background-image: url("../img/blackSummer-background.jpg");
+  background-size: cover;
+  height: 1000px;
+}
+.main-container .navbar-mobile {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background: #0000008f;
+  width: 100%;
+  height: 55px;
+}
+.navbar .logo {
+  height: 30px;
+  margin: 0 45px 0 50px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+.navbar ul li {
+  margin-right: 18px;
+  font-size: 14px;
+}
+.navbar ul li:first-of-type {
+  font-weight: bold;
+}
+
+.mainShow-container {
+  position: relative;
+  color: white;
+  top: 125px;
+  margin: 0 0 200px 50px;
+}
+.mainShow-container h1 {
+  font-size: 80px;
+  width: 370px;
+  line-height: 60px;
+}
+
+.showTitle {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.showTitle h3 {
+  margin-right: 10px;
+  font-weight: normal;
+}
+.showTitle h2 {
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 12px 0;
+}
+.buttons .play-btn, .buttons .list-btn {
+  padding: 10px 30px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.4);
+  color: white;
+  font-size: 14px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.buttons .play-btn .fas, .buttons .list-btn .fas {
+  color: white;
+  margin-right: 10px;
+}
+.buttons .play-btn:hover, .buttons .list-btn:hover {
+  background-color: #e6e6e6;
+  color: black;
+}
+.buttons .play-btn:hover .fas, .buttons .list-btn:hover .fas {
+  color: black;
+}
+
+.mainShow-container .info {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+}
+.mainShow-container .info .season {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.mainShow-container .info .synopsis {
+  font-size: 16px;
+}
+
+.videos {
+  margin: 0px 0px 0px 50px;
+}
+.videos .title {
+  color: #e5e5e5;
+  font-size: 23px;
+}
+.videos .section {
+  margin-top: 40px;
+}
+.videos .section .title {
+  margin-top: 40px;
+}
+
+.container-previews {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.container-previews img {
+  width: 255px;
+  height: 100%;
+  margin-right: 5px;
+  align-items: center;
+}
+.container-previews img:hover {
+  width: 355px;
+  height: 100%;
+}
+
+@media (max-width: 770px) {
+  .main-container {
+    background-image: url("../img/breakingbad-background.jpg");
+    background-repeat: repeat-x;
+    height: 200px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 50px;
+    position: fixed;
+    padding: 0 0 0 20px;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+  }
+  .navbar-mobile .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-mobile .logo-container .fas {
+    width: 24px;
+    color: white;
+  }
+  .navbar-mobile .logo-container .logo {
+    height: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
